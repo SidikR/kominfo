@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"main/database"
 	"main/router"
-	"main/seeder"
 	"net/url"
 	"strconv"
 
@@ -26,7 +25,7 @@ func main() {
 	db.LogMode(true)
 
 	// migration.Migrate(db)
-	seeder.Seed(db)
+	// seeder.Seed(db)
 
 	r := gin.Default()
 

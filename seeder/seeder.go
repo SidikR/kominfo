@@ -56,7 +56,7 @@ func Seed(db *gorm.DB) {
 	for i := 4; i <= 24; i++ {
 		kecamatan := fmt.Sprintf("18.01.%02d", i)
 
-		for j := 1; j <= 10; j++ {
+		for j := 1; j <= 2; j++ {
 			desa := fmt.Sprintf("%s.%04d", kecamatan, 2000+j)
 
 			stunting := model.Stunting{
